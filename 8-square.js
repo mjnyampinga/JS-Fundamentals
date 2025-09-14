@@ -1,10 +1,10 @@
-// Print a square of size N using the character 'x'
-const n = parseInt(process.argv[2], 10);
+// Script to print a square of size N using 'X'
+const size = parseInt(process.argv[2], 10);
 
-if (isNaN(n)) {
+if (isNaN(size)) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < n; i++) {
-    console.log('x'.repeat(n));
+  for (let i = 0; i < size; i++) {
+    console.log('X'.repeat(size));
   }
 }
